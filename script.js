@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
       pxAtScroolDown = window.pageYOffset;
     }
 
-    if (pxAtScroolDown + HEIGHT_NAV < window.pageYOffset) {
+    if (pxAtScroolDown + 500 < window.pageYOffset) {
       secondeNav.classList.add("scroll-down");
     }
   }
@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
       pxAtScroolUp = window.pageYOffset;
     }
 
-    if (pxAtScroolUp - HEIGHT_NAV > window.pageYOffset) {
+    if (pxAtScroolUp - 500 > window.pageYOffset) {
       firstNav.classList.remove("scroll-down");
     }
   }
