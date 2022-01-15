@@ -10,7 +10,7 @@ let pxAtScroolUp = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
 
-  if (currentScroll <= 0) {
+  if (currentScroll <= 50) {
     console.log("je suis en haut de la page");
     firstNav.classList.remove("scroll-up");
     firstNav.classList.remove("scroll-down");
